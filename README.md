@@ -31,3 +31,4 @@ Unless the software includes strong indications to the contrary, lack of a licen
 ```
 Text from choosealicense.com/no-license
 ```
+You may use the jenkins-material-theme.css which is MIT Licensed.

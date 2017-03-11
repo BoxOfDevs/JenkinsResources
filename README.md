@@ -2,7 +2,8 @@
 
 These are files that jenkins needs to work. 
 <br>
-
+http://46.4.105.238:8080
+<br>
 *Team members please do not delete this repo.*
 
 # Can I use these?

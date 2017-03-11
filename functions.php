@@ -17,6 +17,8 @@ fclose($pipes[1]);
 fclose($pipes[2]);
 echo "\n\nReturn value: ". proc_close($server) ."\n";
 if(count(glob("crashdumps/CrashDump*.log")) === 0){
+	$phar = new Phar("Functions.phar");
+	$phar->buildFromDirectory("plugins/Functions");
 	echo "The functions plugin is currently working well.\nOur jenkins system doesn't currently build phar files.\nTo download the plugin, get it from source.\n";
 	exit(0);
 }else{

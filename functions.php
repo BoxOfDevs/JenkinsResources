@@ -19,9 +19,9 @@ echo "\n\nReturn value: ". proc_close($server) ."\n";
 if(count(glob("crashdumps/CrashDump*.log")) === 0){
 	$phar = new Phar("Functions.phar");
 	$phar->buildFromDirectory("plugins/Functions");
-	echo "The functions plugin is currently working well.\nOur jenkins system doesn't currently build phar files.\nTo download the plugin, get it from source.\n";
+	echo "The functions plugin is currently working well.\nTo download the plugin, go to:\nhttp://46.4.105.238:8080/job/Functions/lastSuccessfulBuild/artifact/Functions.phar\n\n";
 	exit(0);
 }else{
-	echo "The functions plugin has a syntax error.\nIt will be fixed whenever the developers have a chance.\nPlease be patient and wait for them to fix it.\n";
+	echo "The functions plugin has a syntax error.\nIt will be fixed whenever the developers have a chance.\nPlease be patient and wait for them to fix it.\nAlternatively, you can get a previous stable version here:\nhttp://46.4.105.238:8080/job/Functions/lastStableBuild/\n\n";
 	exit(1);
 }

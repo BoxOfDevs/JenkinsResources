@@ -18,7 +18,7 @@ fclose($pipes[2]);
 echo "\n\nReturn value: ". proc_close($server) ."\n";
 if(count(glob("crashdumps/CrashDump*.log")) === 0){
 	$phar = new Phar("InstaPerms.phar");
-	$phar->buildFromDirectory("plugins/InstaPerms");
+	$phar->buildFromDirectory("plugins/InstaPerms-master");
 	echo "The InstaPerms plugin is currently working well.\nTo download the plugin, go to:\nhttp://46.4.105.238:8080/job/InstaPerms/lastSuccessfulBuild/artifact/InstaPerms.phar\n\n";
 	exit(0);
 }else{

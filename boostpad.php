@@ -24,7 +24,7 @@ if(count(glob("crashdumps/CrashDump*.log")) === 0){
 <<<<<<< HEAD
 	$phar->buildFromDirectory("plugins/BoostPad-master");
 =======
-	$phar->buildFromDirectory("plugins/JQDSounds-master");
+	$phar->buildFromDirectory("plugins/BoostPad-master");
 >>>>>>> origin/master
 	echo "The BoostPad plugin is currently working well.\nTo download the plugin, go to:\nhttp://46.4.105.238:8080/job/BoostPad/lastSuccessfulBuild/artifact/BoostPad.phar\n\n";
 	exit(0);

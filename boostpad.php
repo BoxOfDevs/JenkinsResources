@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 <?php
 $server = proc_open(PHP_BINARY . " src/pocketmine/PocketMine.php --no-wizard", [
 	0 => ["pipe", "r"],
@@ -17,10 +21,18 @@ fclose($pipes[2]);
 echo "\n\nReturn value: ". proc_close($server) ."\n";
 if(count(glob("crashdumps/CrashDump*.log")) === 0){
 	$phar = new Phar("BoostPad.phar");
+<<<<<<< HEAD
 	$phar->buildFromDirectory("plugins/BoostPad-master");
+=======
+	$phar->buildFromDirectory("plugins/JQDSounds-master");
+>>>>>>> origin/master
 	echo "The BoostPad plugin is currently working well.\nTo download the plugin, go to:\nhttp://46.4.105.238:8080/job/BoostPad/lastSuccessfulBuild/artifact/BoostPad.phar\n\n";
 	exit(0);
 }else{
 	echo "The BoostPad plugin has a syntax error.\nIt will be fixed whenever the developers have a chance.\nPlease be patient and wait for them to fix it.\nAlternatively, you can get a previous stable version here:\nhttp://46.4.105.238:8080/job/BoostPad/lastStableBuild/\n\n";
 	exit(1);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

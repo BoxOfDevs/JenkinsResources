@@ -5,6 +5,9 @@ These are files that jenkins needs to work.
 http://46.4.105.238:8080
 <br>
 *Team members please do not delete this repo.*
+<br>
+**Why is this a separate repo?** To keep things organised and easy to access. If there are errors with the script and you keep commiting to fix it, you would keep triggering builds.
+
 
 # Can I use these?
 
